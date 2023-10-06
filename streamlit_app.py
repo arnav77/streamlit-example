@@ -1,5 +1,5 @@
 import os
-# import openai
+import openai
 import streamlit as st
 
 import warnings
@@ -31,10 +31,10 @@ os.environ["OPENAI_API_KEY"] = openai_key
 os.environ["OPENAI_API_VERSION"] = "2023-05-15"
 
 # Openai Config variables
-# openai.api_type = "azure"
-# openai.api_key = openai_key
-# openai.api_base = "https://gen-ai-openai-resource.openai.azure.com/"
-# openai.api_version = "2023-05-15"
+openai.api_type = "azure"
+openai.api_key = openai_key
+openai.api_base = "https://gen-ai-openai-resource.openai.azure.com/"
+openai.api_version = "2023-05-15"
 openai_embedding_model = "embedding_model"
 deployment_name="generative_model"
 
